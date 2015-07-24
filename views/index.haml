@@ -1,0 +1,51 @@
+!!! 5
+%html
+  %head
+    %title Admisión 2015 BUAP
+    %meta{:charset => "UTF-8"}
+    %link{:rel => "stylesheet", :href => "https://storage.googleapis.com/code.getmdl.io/1.0.1/material.indigo-pink.min.css"}
+    %script{:src => "https://storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"}
+    %link{:rel => "stylesheet", :href => "https://fonts.googleapis.com/icon?family=Material+Icons"}
+    %link{:rel => "stylesheet", :href => "/assets/app.css"}
+  %body
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      .mdl-layout__header
+        .mdl-layout__header-row
+          %span.mdl-layout-title Admisión 2015
+          .mdl-layout-spacer
+          %nav.mdl-navigation.mdl-layout--large-screen-only
+            %a.mdl-navigation__link{:href => "/graficas"} Graficas
+            %a.mdl-navigation__link{:href => "/graficas"} Datos
+            %a.mdl-navigation__link{:href => "/graficas"} Historias
+      .mdl-layout__content
+        .page-content.mdl.mdl-typography--text-center
+          .mdl-cell.mdl-cell--6-col
+            %table.mdl-data-table.mdl-js-data-table.mdl-shadow--2dp
+              %thead
+                %tr
+                  - prepa[0].slice(0, prepa[0].length - 1 ).each do |data|
+                    %th #{data.upcase}
+              %tbody
+                - prepa.slice(50, 200).each do |row|
+                  %tr
+                    - row.slice(0, row.length - 1).each do |element|
+                      - if element == "HIJOS DE TRABAJADORES BUAP"
+                        %td
+                          %i.material-icons group
+                      - else
+                        %td #{element}
+
+        %footer.mdl-mini-footer
+          .mdl-mini-footer--left-section
+            .mdl-logo Title
+            %ul.mdl-mini-footer--link-list
+              %li
+                %a{:href => "/Datos"}Datos
+              %li
+                %a{:href => "/Github"}Github
+              %li
+                %a{:href => "/Open data puebla"}Open Data Puebla
+          .mdl-mini-footer--right-section
+            %button.mdl-mini-footer__social-btn
+            %button.mdl-mini-footer__social-btn
+            %button.mdl-mini-footer__social-btn

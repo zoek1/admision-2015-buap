@@ -1,0 +1,11 @@
+{
+  "name": "buap-admision",
+  "version": "1.0.0",
+  "description": "Dependencias de la aplicación",
+  "dependencies": {
+    "typescript": "^1.5.3"
+  },
+  "author": "Miguel Angel Gordian",
+  "license": "GPL v3",
+  "git": "https://github.com/zoek1/admision-2015-buap"
+}

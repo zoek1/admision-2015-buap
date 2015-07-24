@@ -1,0 +1,51 @@
+GIT
+  remote: git://github.com/antage/sprockets-typescript.git
+  revision: 9066b2300fa24b82e343ac76ff12d067f8e52139
+  specs:
+    sprockets-typescript (1.0)
+      sprockets (~> 2.1)
+      therubyracer
+      tilt
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    cuba (3.1.1)
+      rack
+    cuba-assets (0.1.0)
+      cuba (~> 3.1.1)
+      sprockets (~> 2.12.3)
+      uglifier (~> 2.5.3)
+    execjs (2.5.2)
+    haml (4.0.6)
+      tilt
+    hike (1.2.3)
+    json (1.8.3)
+    libv8 (3.16.14.11)
+    multi_json (1.11.2)
+    rack (1.6.4)
+    ref (2.0.0)
+    sass (3.4.16)
+    sprockets (2.12.4)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    therubyracer (0.12.2)
+      libv8 (~> 3.16.14.0)
+      ref
+    tilt (1.4.1)
+    uglifier (2.5.3)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cuba (~> 3.1.1)
+  cuba-assets
+  haml
+  sass
+  sprockets-typescript!
+  tilt
